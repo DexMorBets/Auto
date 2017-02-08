@@ -1,0 +1,19 @@
+{% load staticfiles %}
+
+<html>
+    <head lang="ru">
+        <title>Autoservolux</title>
+        <script src='{% static "js/jquery-3.1.1.min.js" %}'></script>
+        <script src='{% static "js/jquery-ui.min.js" %}'></script>
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <link rel="stylesheet" href="{% static 'css/baseApp.css' %}">
+    </head>
+    <body>
+        <div class="main">
+            <div class="contact-bar">
+
+            </div>
+        </div>
+        {% block content %}{% endblock %}
+    </body>
+</html>
