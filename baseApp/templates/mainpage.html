@@ -49,6 +49,7 @@
     <div class="services">
         <div class="container-services clearfix">
             <div class="title-block">ТОВАРЫ И УСЛУГИ</div>
+            {% if services %}
             {% for service in services %}
             <div class="block">
                 <div class="image-block"><img src="{% static 'img/'%}{{service.image}}"></div>
@@ -56,6 +57,7 @@
                 <div class="description-block">{{service.description}}</div>
             </div>
             {% endfor %}
+            {% endif %}
         </div>
         <div class="button"><a>ПОКАЗАТЬ ВСЕ</a></div>
     </div>
