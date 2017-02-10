@@ -8,7 +8,7 @@ from django.http.response import HttpResponseRedirect
 from django.shortcuts import render, get_object_or_404, redirect
 from django.utils import timezone
 from django.contrib.auth.decorators import user_passes_test
-# from .models import
+from .models import Service
 from django.core.paginator import Paginator
 from django.template.context_processors import csrf
 from django.http import HttpResponse
@@ -17,5 +17,7 @@ from django.http import HttpResponse
 
 
 def mainpage(request):
-    args = []
+    args = {}
+    services = Service.objects.all()
+    args['services'] = services
     return render(request, 'mainpage.html', args)

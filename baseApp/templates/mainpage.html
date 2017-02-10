@@ -2,5 +2,66 @@
 {% load staticfiles %}
 
 {% block content %}
-
+<div class="main-block">
+    <div class="slider">
+        <div style="background-image: url('{% static "img/porsche.jpg" %}')"></div>
+    </div>
+    <div class="skils">
+        <div class="container-skils">
+            <div class="block">
+                <div class="skils-block">
+                    <div class="image-block">
+                        <img src="{% static 'img/skills/Clock.png'%}">
+                    </div>
+                    <div class="title-block">ОПЕРАТИВНОСТЬ</div>
+                    <div class="description-block">Мы ценим Ваше время, поэтому выполняем работу качественно в кратчайшие сроки.</div>
+                </div>
+            </div>
+            <div class="block">
+                <div class="skils-block">
+                    <div class="image-block">
+                        <img src="{% static 'img/skills/Cash.png'%}">
+                    </div>
+                    <div class="title-block">СКИДКИ</div>
+                    <div class="description-block">Мы ценим Вашу лояльность. Поэтому наши постоянные клиенты являются обладателями скидкок и привилегий.</div>
+                </div>
+            </div>
+            <div class="block">
+                <div class="skils-block">
+                    <div class="image-block">
+                        <img src="{% static 'img/skills/Wrench.png'%}">
+                    </div>
+                    <div class="title-block">СОВРЕМЕННОЕ ОБОРУДОВАНИЕ</div>
+                    <div class="description-block">Наши специалисты используют современное и высокотехничное оборудование.</div>
+                </div>
+            </div>
+            <div class="block">
+                <div class="skils-block">
+                    <div class="image-block">
+                        <img src="{% static 'img/skills/Like.png'%}">
+                    </div>
+                    <div class="title-block">КАЧЕСТВО ПО ДОСТУПНОЙ ЦЕНЕ</div>
+                    <div class="description-block">Наши специалисты помогут найти наиболее бюджетный и качественный вариант ремонта Вашего автомобиля. </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="services">
+        <div class="container-services clearfix">
+            <div class="title-block">ТОВАРЫ И УСЛУГИ</div>
+            {% for service in services %}
+            <div class="block">
+                <div class="image-block"><img src="{% static 'img/'%}{{service.image}}"></div>
+                <div class="title-block">{{service.title}}</div>
+                <div class="description-block">{{service.description}}</div>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="button"><a>ПОКАЗАТЬ ВСЕ</a></div>
+    </div>
+    <div class="im">
+        <div class="title-block">СКИДКА 10% НА ЗАМЕНУ МАСЛА</div>
+        <div class="description-block">*Внимание! Скидка действует только для участников нашей группы Вконтакте.</div>
+    </div>
+</div>
 {% endblock %}

@@ -2,18 +2,112 @@
 
 <html>
     <head lang="ru">
-        <title>Autoservolux</title>
+        <title>Автомастерская "Автосерволюкс"</title>
         <script src='{% static "js/jquery-3.1.1.min.js" %}'></script>
         <script src='{% static "js/jquery-ui.min.js" %}'></script>
         <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
         <link rel="stylesheet" href="{% static 'css/baseApp.css' %}">
     </head>
     <body>
         <div class="main">
-            <div class="contact-bar">
-
+            <div class="container-bar">
+                <div class="bar">
+                    <div class="contact-bar">
+                        <div>
+                            <img src="{% static 'img/bar/Phone.png'%}" alt="Phone"><span><a href="tel:80297935987">8029 793-59-87</a></span>
+                        </div>
+                        <div>
+                            <img src="{% static 'img/bar/Marker.png'%}" alt="Marker"><span>Минск, Гурского 1А</span>
+                        </div>
+                    </div>
+                    <div class="social-bar">
+                        <div>
+                            <a href=""><img class="vk" src="{% static 'img/social/vk.png'%}" alt="Vkontakte"></a>
+                        </div>
+                        <div>
+                            <a href=""><img src="{% static 'img/social/facebook.png'%}" alt="Facebook"></a>
+                        </div>
+                        <div>
+                            <a href=""><img src="{% static 'img/social/od.png'%}" alt="Odnoklassniki"></a>
+                        </div>
+                        <div>
+                            <a href=""><img src="{% static 'img/social/twitter.png'%}" alt="Twitter"></a>
+                        </div>
+                        <div>
+                            <a href=""><img src="{% static 'img/social/inst.png'%}" alt="Instagram"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu">
+                <div class="menu-container">
+                    <div class="logo">
+                        <img src="{% static 'img/bar/Car.png'%}" alt="Car">
+                        <span>АВТОСЕРВОЛЮКС</span>
+                    </div>
+                    <div class="menu-toolbar">
+                        <div><a href="">ГЛАВНАЯ</a></div>
+                        <div><a href="">УСЛУГИ</a></div>
+                        <div><a href="">ЦЕНЫ</a></div>
+                        <div><a href="">О КОМПАНИИ</a></div>
+                        <div><a href="">КОНТАКТЫ</a></div>
+                    </div>
+                </div>
             </div>
         </div>
         {% block content %}{% endblock %}
+        <div class="footer">
+            <div class="footer-main clearfix">
+                <div class="block">
+                    <div class="title-block">НЕМНОГО О НАС</div>
+                    <div class="description-block">
+                        Наш автосервис был основан в 2012 году настоящими профессионалами, которые занимаются ремонтом  авто уже   много  лет.   Наши  работники готовы   помочь   Вам   с  ремонтом Вашего         автомобиля      любой сложности.
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="title-block">НАВИГАЦИЯ</div>
+                    <div class="description-block navigate-bar">
+                        <p><a>Главная</a></p>
+                        <p><a>Услуги</a></p>
+                        <p><a>Цены</a></p>
+                        <p><a>О компании</a></p>
+                        <p><a>Контакты</a></p>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="title-block">НАШ АДРЕС</div>
+                    <div class="ul-block">
+                        <ul>
+                            <li class="phone"><a href="tel:80297935987">8029 793-59-87</a></li>
+                            <li class="address">Минск, Гурского 1А</li>
+                            <li class="skype"><a href="skype: betman193?call">betman193</a></li>
+                            <li class="email"><a href="mailto: dexmor93@gmail.com">dexmor93@gmail.com</a></li>
+                        </ul>
+                    </div>
+                    <div class="social-bar">
+                        <div class="vk">
+                            <a href=""><img src="{% static 'img/social/vk.png'%}" alt="Vkontakte"></a>
+                        </div>
+                        <div class="facebook">
+                            <a href=""><img src="{% static 'img/social/facebook.png'%}" alt="Facebook"></a>
+                        </div>
+                        <div class="od">
+                            <a href=""><img src="{% static 'img/social/od.png'%}" alt="Odnoklassniki"></a>
+                        </div>
+                        <div class="twitter">
+                            <a href=""><img src="{% static 'img/social/twitter.png'%}" alt="Twitter"></a>
+                        </div>
+                        <div class="inst">
+                            <a href=""><img src="{% static 'img/social/inst.png'%}" alt="Instagram"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="corp">
+            <div class="block">© 2017 <a href="https://vk.com/egorbets">Беть Егор</a></div>
+        </div>
     </body>
 </html>
