@@ -7,7 +7,7 @@
         <div style="background-image: url('{% static "img/porsche.jpg" %}')"></div>
     </div>
     <div class="skils">
-        <div class="container-skils">
+        <div class="container-skils clearfix">
             <div class="block">
                 <div class="skils-block">
                     <div class="image-block">
@@ -47,17 +47,17 @@
         </div>
     </div>
     <div class="services">
-        <div class="container-services clearfix">
+        <div class="container-services">
             <div class="title-block">ТОВАРЫ И УСЛУГИ</div>
-            {% if services %}
-            {% for service in services %}
-            <div class="block">
-                <div class="image-block"><img src="{% static 'img/'%}{{service.image}}"></div>
-                <div class="title-block">{{service.title}}</div>
-                <div class="description-block">{{service.description}}</div>
+            <div class="container-block clearfix">
+                {% for service in services %}
+                <div class="block">
+                    <div class="image-block"><img src="{% static 'img/'%}{{service.image}}"></div>
+                    <div class="title-block">{{service.title}}</div>
+                    <div class="description-block">{{service.description}}</div>
+                </div>
+                {% endfor %}
             </div>
-            {% endfor %}
-            {% endif %}
         </div>
         <div class="button"><a>ПОКАЗАТЬ ВСЕ</a></div>
     </div>

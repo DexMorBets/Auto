@@ -9,6 +9,7 @@ body {
 
 body::before {
     background: url('../img/mercedes.jpg') no-repeat center center;
+    min-width: 600px;
     background-size: cover;
     content: ' ';
     height: 100%;
@@ -24,6 +25,7 @@ body::before {
     width: 100%;
     height: 50px;
     background-color: #e4e5e6;
+    padding: 0 20px;
 }
 
 .bar {
@@ -96,6 +98,7 @@ body::before {
     width: 100%;
     height: 100px;
     background-color: white;
+    padding: 0 20px;
 }
 
 .menu-container {
@@ -105,14 +108,30 @@ body::before {
     margin: 0 auto;
 }
 
+.menu .menu-container .menu-button {
+    display: none;
+    float: right;
+    margin: 30px 0;
+}
+
+.menu .menu-container .menu-button span {
+    font-size: 30px;
+}
+
+.menu .menu-container .menu-button span:hover {
+    color: rgba(151, 227, 234, 0.9);
+    cursor: pointer;
+}
+
 .logo {
     float: left;
     height: 80px;
+    padding: 30px 0;
 }
 
 .logo img {
-    width: 100px;
-    height: 100px;
+    width: 60px;
+    height: 40px;
     margin-right: 15px;
 }
 
@@ -121,7 +140,8 @@ body::before {
     vertical-align: middle;
 }
 
-.menu-toolbar {
+.menu-toolbar,
+.menu-toolbar-hidden{
     display: table;
     float: right;
     height: 80px;
@@ -129,7 +149,18 @@ body::before {
     margin-bottom: 10px;
 }
 
-.menu-toolbar a {
+.menu-toolbar-hidden {
+    display: none;
+    height: auto;
+    width: 100%;
+    min-width: 600px;
+    float: none;
+    background: white;
+    margin: 0;
+}
+
+.menu-toolbar a,
+.menu-toolbar-hidden a{
     color: black;
     font-size: 22px;
     text-decoration: none;
@@ -137,18 +168,23 @@ body::before {
     transition: all 0.05s ease-in-out;
 }
 
-.menu-toolbar a:hover {
+.menu-toolbar a:hover,
+.menu-toolbar-hidden a:hover{
     border-bottom: 5px solid rgba(151, 227, 234, 0.9);
 }
 
-.menu-toolbar div {
+.menu-toolbar div,
+.menu-toolbar-hidden div{
     display: table-cell;
     width: auto;
     height: 80px;
     text-align: center;
     vertical-align: middle;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 0 10px;
+}
+
+.menu-toolbar-hidden div {
+    display: block;
 }
 
 .slider {
@@ -168,28 +204,28 @@ body::before {
 
 .skils {
     background-color: white;
-    height: 470px;
+    height: auto;
     width: 100%;
 }
 
 .container-skils {
     max-width: 1100px;
     min-width: 600px;
-    height: 470px;
+    height: auto;
     margin: 0 auto;
 }
 
 .container-skils .block {
-    height: 470px;
+    height: auto;
     width: 25%;
     float: left;
     margin-right: -3px;
 }
 
 .skils-block {
-    height: 300px;
+    height: auto;
     width: 100%;
-    margin-top: 85px;
+    margin: 95px 0;
 }
 
 .skils-block .image-block {
@@ -229,9 +265,10 @@ body::before {
 .im {
     height: 400px;
     width: 100%;
+    min-width: 600px;
     text-align: center;
     color: white;
-    padding: 150px 0;
+    padding: 150px 20px;
 }
 
 .im .title-block {
@@ -248,7 +285,7 @@ body::before {
     width: 100%;
     min-height: 400px;
     max-height: 4000px;
-    padding: 50px 0;
+    padding: 50px 20px;
 }
 
 .services .container-services {
@@ -266,12 +303,16 @@ body::before {
 }
 
 .container-services .block {
-    background-color: white;
-    min-height: 400px;
-    max-height: 1500px;
-    width: 346.6px;
     float: left;
-    margin-right: 30px;
+    background-color: white;
+    height: auto;
+    width: 31.666666666%;
+    margin-right: 2.5%;
+}
+
+.container-services .container-block {
+    height: auto;
+    display: inline-block;
 }
 
 .container-services .block:last-child {
@@ -280,18 +321,18 @@ body::before {
 }
 
 .container-services .block .image-block {
-    height: 231px;
+    height: auto;
     width: auto;
 }
 
 .container-services .block .image-block img{
     height: auto;
-    width: 346.6px;
+    width: 100%;
 }
 
 .container-services .block .title-block {
     text-align: center;
-    padding: 20px 0;
+    padding: 20px 20px;
     margin: 0;
 }
 
@@ -307,8 +348,8 @@ body::before {
     padding: 10px 0;
     width: 300px;
     height: 50px;
+    min-width: 600px;
     font-size: 20px;
-
 }
 
 .services .button a {
@@ -336,7 +377,7 @@ body::before {
 }
 
 .corp {
-    padding: 25px 0;
+    padding: 25px 20px;
     background-color: #222;
     color: #aaa;
     border-top: 1px solid #404040;
@@ -354,8 +395,8 @@ body::before {
     float: left;
     min-height: 200px;
     max-height: 1500px;
-    width: 346.6px;
-    margin-right: 30px;
+    width: 31.666666666%;
+    margin-right: 2.5%;
     padding: 40px 20px;
 }
 
@@ -364,10 +405,17 @@ body::before {
     margin: 0;
 }
 
-.footer-main .block .title-block {
+.footer-main .block .about-title-block {
     text-align: center;
     font-size: 25px;
     margin-bottom: 30px;
+}
+
+.footer-main .block .nav-title-block,
+.footer-main .block .address-title-block {
+    font-size: 25px;
+    margin:0 0 30px 30%;
+
 }
 
 .footer-main .block .description-block {
@@ -383,7 +431,7 @@ body::before {
 }
 
 .footer-main .block .navigate-bar {
-    padding-left: 95px;
+    padding-left: 30%;
 }
 
 .corp a:hover,
@@ -393,7 +441,8 @@ body::before {
 }
 
 .footer .ul-block ul {
-    margin-left: 55px;
+    margin-left: 30%;
+    padding: 0;
 }
 
 .footer .ul-block ul li {
@@ -428,7 +477,7 @@ body::before {
 .footer .social-bar {
     border-top: 1px solid #404040;
     display: inline-block;
-    margin: 10px 0 0 88px;
+    margin: 10px 0 0 30%;
     padding-top: 15px;
 }
 
@@ -472,4 +521,42 @@ body::before {
 
 .footer .social-bar .inst:hover {
     background-image: url("../img/social/inst-back.jpg");
+}
+
+@media screen and (max-width: 870px) {
+    .menu-toolbar a {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+   .container-skils .block {
+       float: none;
+       width: 100%;
+   }
+   .skils-block .description-block {
+       margin: 0 150px;
+   }
+   .container-services .block {
+       float: none;
+       width: 100%;
+       margin: 0 0 50px 0;
+   }
+   .footer-main .block {
+       width: 50%;
+       margin: 0;
+   }
+   .footer-main .block:first-child {
+       float: none;
+       width: 100%;
+   }
+   .menu-toolbar {
+       display: none;
+   }
+   .menu-toolbar-hidden {
+       display: block;
+   }
+   .menu .menu-container .menu-button {
+       display: block;
+   }
 }
