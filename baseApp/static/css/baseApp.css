@@ -56,7 +56,6 @@ body::before {
 .contact-bar span {
     margin-left: 15px;
     vertical-align: middle;
-    letter-spacing: 0.4px;
 }
 
 .contact-bar span a {
@@ -348,7 +347,7 @@ body::before {
 }
 
 .services .button {
-    margin: 45px auto 0 auto;
+    margin: 45px auto 10px auto;
     text-align: center;
     padding: 10px 0;
     width: 300px;
@@ -577,6 +576,7 @@ body::before {
    }
    .skils-block .description-block {
        margin: 0 150px;
+       font-size: 50px;
    }
    .container-services .block {
        float: none;
@@ -623,7 +623,7 @@ body::before {
        margin: 0;
    }
    .logo span {
-       font-size: 50px;
+       font-size: 65px;
    }
    .logo img {
        width: auto;
@@ -631,7 +631,7 @@ body::before {
        margin-right: 25px;
     }
    .menu .menu-container .menu-button span {
-       font-size: 60px;
+       font-size: 80px;
     }
    .menu-toolbar a, .menu-toolbar-hidden a {
        font-size: 35px;
@@ -650,17 +650,22 @@ body::before {
        height: 100px;
    }
    .container-services .container-title-block {
-       font-size: 45px;
+       font-size: 65px;
    }
    .container-services .block .title-block {
-       font-size: 45px;
+       font-size: 65px;
+       padding: 50px 30px;
    }
    .container-services .block .description-block {
-       font-size: 30px;
+       font-size: 45px;
        padding: 0 30px 30px 30px;
    }
    .services .button {
-       font-size: 40px;
+       font-size: 50px;
+       margin-bottom: 20px;
+   }
+   .skils-block .title-block {
+       font-size: 65px;
    }
    .im {
        padding: 150px 30px;
@@ -697,7 +702,7 @@ body::before {
        width: 20px;
    }
    .footer .social-bar {
-       margin: 10px 0 0 0;
+       margin: 10px 0 0 70px;
    }
    .footer .social-bar div {
        width: 60px;
