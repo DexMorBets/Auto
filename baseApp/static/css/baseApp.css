@@ -39,6 +39,8 @@ body::before {
     float: left;
     display: inline-block;
     margin: 13px 0;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 16px;
 }
 
 .contact-bar img {
@@ -97,7 +99,7 @@ body::before {
 
 .menu {
     width: 100%;
-    height: 100px;
+    height: auto;
     background-color: white;
     padding: 0 20px;
 }
@@ -105,7 +107,7 @@ body::before {
 .menu-container {
     max-width: 1100px;
     min-width: 600px;
-    height: 100px;
+    height: auto;
     margin: 0 auto;
 }
 
@@ -126,7 +128,6 @@ body::before {
 
 .logo {
     float: left;
-    height: 80px;
     padding: 30px 0;
 }
 
@@ -178,7 +179,7 @@ body::before {
 .menu-toolbar-hidden div{
     display: table-cell;
     width: auto;
-    height: 80px;
+    height: auto;
     text-align: center;
     vertical-align: middle;
     padding: 0 10px;
@@ -253,9 +254,9 @@ body::before {
 
 .skils-block .description-block {
     margin: 0 20px;
-    font-size: 14px;
-    letter-spacing: 0.4px;
+    font-size: 16px;
     text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 .skils-block img {
@@ -265,7 +266,7 @@ body::before {
 }
 
 .im {
-    height: 400px;
+    height: auto;
     width: 100%;
     min-width: 600px;
     text-align: center;
@@ -336,12 +337,14 @@ body::before {
     text-align: center;
     padding: 20px 20px;
     margin: 0;
+    font-size: 20px;
 }
 
 .container-services .block .description-block {
     text-align: justify;
     padding: 0 20px 20px 20px;
     font-size: 16px;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 .services .button {
@@ -425,6 +428,7 @@ body::before {
     text-align: justify;
     font-size: 15px;
     color: #aaa;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 .corp a,
@@ -535,10 +539,41 @@ body::before {
     }
 }
 
+@media (max-width: 870px) {
+    .menu-toolbar a {
+        font-size: 18px;
+    }
+}
+
 @media screen and (max-device-width: 768px) {
+    img {
+        max-width: 100%
+    }
+    html {
+        -webkit-text-size-adjust: none;
+   }
+   .container-bar {
+       padding: 0 30px;
+   }
    .container-skils .block {
        float: none;
        width: 100%;
+   }
+   .contact-bar {
+        margin: 40px 0;
+    }
+   .contact-bar img {
+       width: 25px;
+       height: 25px;
+   }
+   .contact-bar span {
+       font-size: 30px;
+   }
+   .services {
+       padding: 50px 30px;
+   }
+   .bar {
+        font-size: 30px;
    }
    .skils-block .description-block {
        margin: 0 150px;
@@ -548,6 +583,10 @@ body::before {
        width: 100%;
        margin: 0 0 50px 0;
    }
+   .corp {
+       padding: 25px 30px;
+       font-size: 35px;
+   }
    .footer-main .block {
        width: 50%;
        margin: 0;
@@ -556,10 +595,148 @@ body::before {
        float: none;
        width: 100%;
    }
+   .menu {
+       padding: 0 30px;
+       height: auto;
+   }
    .menu-toolbar {
        display: none;
    }
    .menu .menu-container .menu-button {
        display: block;
+       margin: 40px 0;
+   }
+   .main .social-bar {
+       margin: 30px auto;
+   }
+   .main .social-bar div {
+       width: auto;
+       height: auto;
+       padding: 10px;
+   }
+   .social-bar img {
+       width: 40px;
+       height: 40px;
+       margin: 0;
+   }
+   .main .social-bar .vk {
+       margin: 0;
+   }
+   .logo span {
+       font-size: 50px;
+   }
+   .logo img {
+       width: auto;
+       height: 80px;
+       margin-right: 25px;
+    }
+   .menu .menu-container .menu-button span {
+       font-size: 60px;
+    }
+   .menu-toolbar a, .menu-toolbar-hidden a {
+       font-size: 35px;
+       padding: 0;
+   }
+   .menu-toolbar-hidden div {
+       padding: 35px 0;
+   }
+   .skils-block .image-block {
+       width: 200px;
+       height: 200px;
+       padding: 50px;
+   }
+   .skils-block img {
+       width: 100px;
+       height: 100px;
+   }
+   .container-services .container-title-block {
+       font-size: 45px;
+   }
+   .container-services .block .title-block {
+       font-size: 45px;
+   }
+   .container-services .block .description-block {
+       font-size: 30px;
+       padding: 0 30px 30px 30px;
+   }
+   .services .button {
+       font-size: 40px;
+   }
+   .im {
+       padding: 150px 30px;
+   }
+   .im .title-block {
+       font-size: 50px;
+   }
+   .im .description-block {
+       font-size: 35px;
+   }
+   .footer-main .block .about-title-block {
+       font-size: 45px;
+       margin-bottom: 50px;
+   }
+   .footer-main .block .description-block {
+       font-size: 35px;
+   }
+   .footer-main .block {
+       padding: 50px 30px;
+   }
+   .footer-main .block .nav-title-block, .footer-main .block .address-title-block {
+       font-size: 45px;
+       margin: 0 0 30px 20%;
+    }
+   .footer-main .block .navigate-bar {
+        padding-left: 20%;
+    }
+   .footer .ul-block ul {
+       margin-left: 20%;
+       font-size: 30px;
+   }
+   .footer .ul-block ul .phone::before {
+       height: 20px;
+       width: 20px;
+   }
+   .footer .social-bar {
+       margin: 10px 0 0 0;
+   }
+   .footer .social-bar div {
+       width: 60px;
+       height: 60px;
+       border-radius: 50px;
    }
  }
+
+/*@media (max-width: 768px) {*/
+   /*html {*/
+        /*-webkit-text-size-adjust: none;*/
+   /*}*/
+   /*.container-skils .block {*/
+       /*float: none;*/
+       /*width: 100%;*/
+   /*}*/
+   /*.scils-block {*/
+       /*margin: 10% 0;*/
+   /*}*/
+   /*.skils-block .description-block {*/
+       /*margin: 0 150px;*/
+   /*}*/
+   /*.container-services .block {*/
+       /*float: none;*/
+       /*width: 100%;*/
+       /*margin: 0 0 50px 0;*/
+   /*}*/
+   /*.footer-main .block {*/
+       /*width: 50%;*/
+       /*margin: 0;*/
+   /*}*/
+   /*.footer-main .block:first-child {*/
+       /*float: none;*/
+       /*width: 100%;*/
+   /*}*/
+   /*.menu-toolbar {*/
+       /*display: none;*/
+   /*}*/
+   /*.menu .menu-container .menu-button {*/
+       /*display: block;*/
+   /*}*/
+ /*}*/
