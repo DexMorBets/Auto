@@ -502,7 +502,7 @@ body::before {
 
 .footer .ul-block ul .email::before {
     margin-right: 10px;
-    background-image: url('../img/footer/mail.png');
+    background-image: url('../img/footer/Mail.png');
     background-size: 16px 13px;
     display: inline-block;
     width: 16px;
