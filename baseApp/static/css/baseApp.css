@@ -92,7 +92,8 @@ body::before {
     transition: all 0.3s ease-in-out;
 }
 
-.main .social-bar div:hover {
+.main .social-bar div:hover,
+.main .social-bar div:active {
     background-color: black;
 }
 
@@ -121,8 +122,11 @@ body::before {
 }
 
 .menu .menu-container .menu-button span:hover {
-    color: rgba(151, 227, 234, 0.9);
     cursor: pointer;
+}
+
+.menu .menu-container .menu-button span:active {
+    color: rgba(151, 227, 234, 0.9);
 }
 
 .logo {
@@ -170,7 +174,9 @@ body::before {
 }
 
 .menu-toolbar a:hover,
-.menu-toolbar-hidden a:hover{
+.menu-toolbar a:active,
+.menu-toolbar-hidden a:hover,
+.menu-toolbar-hidden a:active{
     border-bottom: 5px solid rgba(151, 227, 234, 0.9);
 }
 
@@ -201,6 +207,7 @@ body::before {
     position: relative;
     background-position: 50% 50%;
     background-repeat: no-repeat;
+    background-size: cover;
     min-width: 600px;
 }
 
@@ -241,7 +248,8 @@ body::before {
     transition: all 0.3s ease-in-out;
 }
 
-.skils-block .image-block:hover {
+.skils-block .image-block:hover,
+.skils-block .image-block:active {
     background-color: rgb(84, 124, 142);
 }
 
@@ -506,23 +514,28 @@ body::before {
     color: white;
 }
 
-.footer .social-bar .vk:hover {
+.footer .social-bar .vk:hover,
+.footer .social-bar .vk:active {
     background-color: #507299;
 }
 
-.footer .social-bar .facebook:hover {
+.footer .social-bar .facebook:hover,
+.footer .social-bar .facebook:active {
     background-color: #3b5998;
 }
 
-.footer .social-bar .od:hover {
+.footer .social-bar .od:hover,
+.footer .social-bar .od:active {
     background-color: #ee8208;
 }
 
-.footer .social-bar .twitter:hover {
+.footer .social-bar .twitter:hover,
+.footer .social-bar .twitter:active {
     background-color: #00aced;
 }
 
-.footer .social-bar .inst:hover {
+.footer .social-bar .inst:hover,
+.footer .social-bar .inst:active {
     background-image: url("../img/social/inst-back.jpg");
 }
 
@@ -597,7 +610,7 @@ body::before {
        width: 100%;
    }
    .menu {
-       padding: 0 30px;
+       padding: 0 0 0 30px;
        height: auto;
    }
    .menu-toolbar {
@@ -605,7 +618,8 @@ body::before {
    }
    .menu .menu-container .menu-button {
        display: block;
-       margin: 40px 0;
+       padding: 40px 30px 40px 40px;
+       margin: 0;
    }
    .main .social-bar {
        margin: 30px auto;
@@ -655,7 +669,6 @@ body::before {
    }
    .container-services .container-title-block {
        font-size: 65px;
-       margin-bottom: 50px;
        margin: 30px 0 90px 0;
    }
    .container-services .block .title-block {
@@ -668,7 +681,7 @@ body::before {
    }
    .services .button {
        font-size: 50px;
-       margin-bottom: 20px;
+       margin: 60px auto 20px auto;
    }
    .skils-block .title-block {
        font-size: 70px;

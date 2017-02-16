@@ -12,6 +12,7 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
         <link rel="stylesheet" href="{% static 'css/baseApp.css' %}">
         <script src='{% static "js/Own/showMenu.js" %}'></script>
+        <script src='{% static "js/Own/currentPage.js" %}'></script>
         <!--[if lt IE 9]>
             <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
         <![endif]-->
@@ -57,11 +58,11 @@
                         <span>АВТОСЕРВОЛЮКС</span>
                     </div>
                     <div class="menu-toolbar">
-                        <div><a href="">ГЛАВНАЯ</a></div>
-                        <div><a href="">УСЛУГИ</a></div>
-                        <div><a href="">ЦЕНЫ</a></div>
-                        <div><a href="">О КОМПАНИИ</a></div>
-                        <div><a href="">КОНТАКТЫ</a></div>
+                        <div><a class="mainpage" href="">ГЛАВНАЯ</a></div>
+                        <div><a class="servicespage" href="">УСЛУГИ</a></div>
+                        <div><a class="pricepage" href="">ЦЕНЫ</a></div>
+                        <div><a class="aboutpage" href="">О КОМПАНИИ</a></div>
+                        <div><a class="contactpage" href="">КОНТАКТЫ</a></div>
                     </div>
                     <div class="menu-button">
                         <span class="glyphicon glyphicon-menu-hamburger"></span>
@@ -70,11 +71,11 @@
             </div>
         </div>
         <div class="menu-toolbar-hidden">
-            <div><a href="">ГЛАВНАЯ</a></div>
-            <div><a href="">УСЛУГИ</a></div>
-            <div><a href="">ЦЕНЫ</a></div>
-            <div><a href="">О КОМПАНИИ</a></div>
-            <div><a href="">КОНТАКТЫ</a></div>
+            <div><a class="mainpage" href="">ГЛАВНАЯ</a></div>
+            <div><a class="servicespage" href="">УСЛУГИ</a></div>
+            <div><a class="pricepage" href="">ЦЕНЫ</a></div>
+            <div><a class="aboutpage" href="">О КОМПАНИИ</a></div>
+            <div><a class="contactpage" href="">КОНТАКТЫ</a></div>
         </div>
         {% block content %}{% endblock %}
         <div class="footer">

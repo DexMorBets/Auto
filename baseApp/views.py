@@ -18,6 +18,6 @@ from django.http import HttpResponse
 
 def mainpage(request):
     args = {}
-    services = Service.objects.all()
+    services = Service.objects.all()[:3]
     args['services'] = services
     return render(request, 'mainpage.html', args)
