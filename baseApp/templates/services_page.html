@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+<div id="page" class="hide">2</div>
+<div class="main-block">
+    <div class="services_logo">
+        <div class="title-block">УСЛУГИ</div>
+        <div class="description-block">
+            Мы предлагаем полный спектр услуг диагностических и ремонтных работ автомобиля.
+Для ознакосления со стоимостью услуг переидите в раздел ПРАЙС.
+        </div>
+    </div>
+    <div class="services">
+        <div class="container-services">
+            <div class="container-title-block">ТОВАРЫ И УСЛУГИ</div>
+            <div class="container-block clearfix">
+                {% for service in services %}
+                <div class="block">
+                    <div class="image-block"><img src="{% static 'img/'%}{{service.image}}"></div>
+                    <div class="title-block">{{service.title}}</div>
+                    <div class="description-block">{{service.description}}</div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    <div class="im">
+        <div class="title-block">СКИДКА 10% НА ЗАМЕНУ МАСЛА</div>
+        <div class="description-block">*Внимание! Скидка действует только для участников нашей группы Вконтакте.</div>
+    </div>
+</div>
+{% endblock %}

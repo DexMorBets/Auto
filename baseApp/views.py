@@ -21,3 +21,10 @@ def mainpage(request):
     services = Service.objects.all()[:3]
     args['services'] = services
     return render(request, 'mainpage.html', args)
+
+
+def services_page(request):
+    args = {}
+    services = Service.objects.all()
+    args['services'] = services
+    return render(request, 'services_page.html', args)
