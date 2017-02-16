@@ -1,6 +1,6 @@
 $(document).ready(function () {
-    $(document).on('click', '.menu-button span', function () {
+    $('.menu-button').tap( function () {
         $('.menu-toolbar-hidden').toggleClass('show');
     });
-})
+});
 
