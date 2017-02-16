@@ -286,7 +286,6 @@ body::before {
     background-color: #e4e5e6;
     width: 100%;
     min-height: 400px;
-    max-height: 4000px;
     padding: 50px 20px;
 }
 
@@ -351,7 +350,6 @@ body::before {
     text-align: center;
     padding: 10px 0;
     width: 300px;
-    height: 50px;
     min-width: 600px;
     font-size: 20px;
 }
@@ -574,9 +572,12 @@ body::before {
    .bar {
         font-size: 30px;
    }
+   .skils-block {
+       margin: 130px 0;
+   }
    .skils-block .description-block {
        margin: 0 150px;
-       font-size: 50px;
+       font-size: 45px;
    }
    .container-services .block {
        float: none;
@@ -651,6 +652,8 @@ body::before {
    }
    .container-services .container-title-block {
        font-size: 65px;
+       margin-bottom: 50px;
+       margin: 30px 0 90px 0;
    }
    .container-services .block .title-block {
        font-size: 65px;
@@ -658,14 +661,15 @@ body::before {
    }
    .container-services .block .description-block {
        font-size: 45px;
-       padding: 0 30px 30px 30px;
+       padding: 0 40px 70px 40px;
    }
    .services .button {
        font-size: 50px;
        margin-bottom: 20px;
    }
    .skils-block .title-block {
-       font-size: 65px;
+       font-size: 70px;
+       padding: 60px 30px;
    }
    .im {
        padding: 150px 30px;
