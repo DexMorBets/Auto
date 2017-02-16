@@ -462,27 +462,52 @@ body::before {
 }
 
 .footer .ul-block ul .phone::before {
-    content: url("../img/footer/Phone.png");
     margin-right: 13px;
+    background-image: url('../img/footer/Phone.png');
+    background-size: 14px 14px;
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    content:"";
 }
 
 .footer .ul-block ul a {
     color: white;
+    font-size: 16px;
+}
+
+.footer .ul-block ul li {
+    font-size: 17px;
 }
 
 .footer .ul-block ul .address::before {
-    content: url("../img/footer/Marker.png");
     margin-right: 13px;
+    background-image: url('../img/footer/Marker.png');
+    background-size: 14px 14px;
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    content:"";
 }
 
 .footer .ul-block ul .skype::before {
-    content: url("../img/footer/Skype.png");
     margin-right: 13px;
+    background-image: url('../img/footer/Skype.png');
+    background-size: 14px 14px;
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    content:"";
 }
 
 .footer .ul-block ul .email::before {
-    content: url("../img/footer/Mail.png");
     margin-right: 10px;
+    background-image: url('../img/footer/mail.png');
+    background-size: 16px 13px;
+    display: inline-block;
+    width: 16px;
+    height: 13px;
+    content:"";
 }
 
 .footer .social-bar {
@@ -717,10 +742,6 @@ body::before {
        margin-left: 20%;
        font-size: 30px;
    }
-   .footer .ul-block ul .phone::before {
-       height: 20px;
-       width: 20px;
-   }
    .footer .social-bar {
        margin: 10px 0 0 70px;
    }
@@ -728,6 +749,34 @@ body::before {
        width: 60px;
        height: 60px;
        border-radius: 50px;
+   }
+   .footer .ul-block ul a,
+   .footer .ul-block ul li{
+       font-size: 30px;
+   }
+   .footer .ul-block ul .phone::before {
+        background-size: 24px 24px;
+        width: 24px;
+        height: 24px;
+        margin-right: 20px;
+   }
+   .footer .ul-block ul .address::before {
+        background-size: 24px 24px;
+        width: 24px;
+        height: 24px;
+        margin-right: 20px;
+   }
+   .footer .ul-block ul .skype::before {
+        background-size: 24px 24px;
+        width: 24px;
+        height: 24px;
+        margin-right: 20px;
+   }
+   .footer .ul-block ul .email::before {
+        background-size: 26px 23px;
+        width: 26px;
+        height: 23px;
+        margin-right: 16px;
    }
  }
 
