@@ -635,11 +635,14 @@ body::before {
        font-size: 80px;
     }
    .menu-toolbar a, .menu-toolbar-hidden a {
-       font-size: 35px;
+       font-size: 45px;
        padding: 0;
    }
+   .menu-toolbar-hidden div:first-child {
+       padding-top: 80px;
+   }
    .menu-toolbar-hidden div {
-       padding: 35px 0;
+       padding: 0 0 80px 0;
    }
    .skils-block .image-block {
        width: 200px;
