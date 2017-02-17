@@ -49,7 +49,7 @@
     </div>
     <div class="services">
         <div class="container-services">
-            <div class="container-title-block">ТОВАРЫ И УСЛУГИ</div>
+            <div class="container-title-block">УСЛУГИ</div>
             <div class="container-block clearfix">
                 {% for service in services %}
                 <div class="block">
@@ -60,11 +60,7 @@
                 {% endfor %}
             </div>
         </div>
-        <div class="button"><a>ПОКАЗАТЬ ВСЕ</a></div>
-    </div>
-    <div class="im">
-        <div class="title-block">СКИДКА 10% НА ЗАМЕНУ МАСЛА</div>
-        <div class="description-block">*Внимание! Скидка действует только для участников нашей группы Вконтакте.</div>
+        <div class="button"><a href="{% url 'services_page' %}">ПОКАЗАТЬ ВСЕ</a></div>
     </div>
 </div>
 {% endblock %}

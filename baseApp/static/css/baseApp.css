@@ -113,6 +113,11 @@ body::before {
     margin: 0 auto;
 }
 
+.menu-container a {
+    color: black;
+    cursor: pointer;
+}
+
 .menu .menu-container .menu-button {
     display: none;
     float: right;
@@ -319,6 +324,7 @@ body::before {
     height: auto;
     width: 31.666666666%;
     margin-right: 2.5%;
+    margin-bottom: 2.5%;
 }
 
 .container-services .container-block {
@@ -326,9 +332,9 @@ body::before {
     display: inline-block;
 }
 
-.container-services .block:last-child {
+.container-services .block:nth-child(3n+3) {
     float: right;
-    margin: 0;
+    margin-right: 0;
 }
 
 .container-services .block .image-block {
@@ -345,7 +351,7 @@ body::before {
     text-align: center;
     padding: 20px 20px;
     margin: 0;
-    font-size: 20px;
+    font-size: 26px;
 }
 
 .container-services .block .description-block {
@@ -576,14 +582,14 @@ body::before {
     display: block;
     width: 110%;
     margin: 0 -5%;
-    height: 280px;
+    height: 290px;
     background: url('../img/mercedes-gle.jpg') 50% 50% no-repeat;
     background-size: cover;
-    -webkit-filter: blur(5px);
-    -moz-filter: blur(5px);
-    -o-filter: blur(5px);
-    -ms-filter: blur(5px);
-    filter: blur(5px);
+    -webkit-filter: blur(9px);
+    -moz-filter: blur(9px);
+    -o-filter: blur(9px);
+    -ms-filter: blur(9px);
+    filter: blur(9px);
     position: absolute;
 }
 
@@ -608,6 +614,12 @@ body::before {
     text-align: center;
     color: white;
     padding: 0 70px;
+}
+
+.services_block {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
 }
 
 @media screen and (max-device-width: 870px) {
@@ -830,10 +842,8 @@ body::before {
        font-size: 40px;
    }
    .services_logo:before {
-       width: 100%;
        height: 590px;
        top: -10px;
-       margin: 0;
    }
  }
 

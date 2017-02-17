@@ -53,16 +53,18 @@
             </div>
             <div class="menu">
                 <div class="menu-container clearfix">
-                    <div class="logo">
-                        <img src="{% static 'img/bar/Car.png'%}" alt="Car">
-                        <span>АВТОСЕРВОЛЮКС</span>
-                    </div>
+                    <a href="/">
+                        <div class="logo">
+                            <img src="{% static 'img/bar/Car.png'%}" alt="Car">
+                            <span>АВТОСЕРВОЛЮКС</span>
+                        </div>
+                    </a>
                     <div class="menu-toolbar">
                         <div><a class="mainpage" href="/">ГЛАВНАЯ</a></div>
                         <div><a class="servicespage" href="{% url 'services_page' %}">УСЛУГИ</a></div>
-                        <div><a class="pricepage" href="">ЦЕНЫ</a></div>
-                        <div><a class="aboutpage" href="">О КОМПАНИИ</a></div>
-                        <div><a class="contactpage" href="">КОНТАКТЫ</a></div>
+                        <div><a class="pricepage" href="{% url 'price_page' %}">ЦЕНЫ</a></div>
+                        <div><a class="aboutpage" href="{% url 'about_page' %}">О КОМПАНИИ</a></div>
+                        <div><a class="contactspage" href="{% url 'contacts_page' %}">КОНТАКТЫ</a></div>
                     </div>
                     <div class="menu-button">
                         <span class="glyphicon glyphicon-menu-hamburger"></span>
@@ -73,11 +75,15 @@
         <div class="menu-toolbar-hidden">
             <div><a class="mainpage" href="/">ГЛАВНАЯ</a></div>
             <div><a class="servicespage" href="{% url 'services_page' %}">УСЛУГИ</a></div>
-            <div><a class="pricepage" href="">ЦЕНЫ</a></div>
-            <div><a class="aboutpage" href="">О КОМПАНИИ</a></div>
-            <div><a class="contactpage" href="">КОНТАКТЫ</a></div>
+            <div><a class="pricepage" href="{% url 'price_page' %}">ЦЕНЫ</a></div>
+            <div><a class="aboutpage" href="{% url 'about_page' %}">О КОМПАНИИ</a></div>
+            <div><a class="contactspage" href="{% url 'contacts_page' %}">КОНТАКТЫ</a></div>
         </div>
         {% block content %}{% endblock %}
+        <div class="im">
+            <div class="title-block">СКИДКА 10% НА ЗАМЕНУ МАСЛА</div>
+            <div class="description-block">*Внимание! Скидка действует только для участников нашей группы Вконтакте.</div>
+        </div>
         <div class="footer">
             <div class="footer-main clearfix">
                 <div class="block">

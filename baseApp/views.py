@@ -28,3 +28,18 @@ def services_page(request):
     services = Service.objects.all()
     args['services'] = services
     return render(request, 'services_page.html', args)
+
+
+def price_page(request):
+    args = {}
+    return render(request, 'price_page.html', args)
+
+
+def about_page(request):
+    args = {}
+    return render(request, 'about_page.html', args)
+
+
+def contacts_page(request):
+    args = {}
+    return render(request, 'contact_page.html', args)
