@@ -5,12 +5,36 @@
 <div id="page" class="hide">3</div>
 <div class="main-block">
     <div class="services_block">
-        <div class="services_logo">
+        <div class="price_logo">
             <div class="title-block">ЦЕНЫ</div>
             <div class="description-block">
                 Мы обслуживаем как иномарки, так и отечественные автомобили, применяя самые современные
 приемы диагностики и ремонта с помощью высокотехнологичного оборудования.
             </div>
+        </div>
+    </div>
+    <div class="price_table">
+        <div class="panel panel-default">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Название</th>
+                        <th>Описание</th>
+                        <th>Цена</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% if prices %}
+                        {% for price in prices %}
+                            <tr class="act">
+                                <td>{{ price.title }}</td>
+                                <td>{{ price.description }}</td>
+                                <td>{{ price.price }} руб.</td>
+                            </tr>
+                        {% endfor %}
+                    {% endif %}
+                </tbody>
+            </table>
         </div>
     </div>
 </div>

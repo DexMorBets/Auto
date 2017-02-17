@@ -8,7 +8,7 @@ from django.http.response import HttpResponseRedirect
 from django.shortcuts import render, get_object_or_404, redirect
 from django.utils import timezone
 from django.contrib.auth.decorators import user_passes_test
-from .models import Service
+from .models import Service, Price
 from django.core.paginator import Paginator
 from django.template.context_processors import csrf
 from django.http import HttpResponse
@@ -32,6 +32,8 @@ def services_page(request):
 
 def price_page(request):
     args = {}
+    prices = Price.objects.all()
+    args["prices"] = prices
     return render(request, 'price_page.html', args)
 
 

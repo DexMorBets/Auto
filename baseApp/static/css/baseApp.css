@@ -7,20 +7,6 @@ body {
     position: relative;
 }
 
-body::before {
-    background: url('../img/mercedes.jpg') no-repeat center center;
-    min-width: 600px;
-    background-size: cover;
-    content: ' ';
-    height: 100%;
-    left: 0;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    will-change: transform;
-    z-index: -1;
-}
-
 .container-bar {
     width: 100%;
     height: auto;
@@ -279,12 +265,16 @@ body::before {
 }
 
 .im {
+    background: url('../img/logos/mercedes.jpg') no-repeat center center;
+    background-attachment: fixed;
+    background-size: cover;
     height: auto;
     width: 100%;
     min-width: 600px;
     text-align: center;
     color: white;
     padding: 150px 20px;
+    border-top: 5px solid #1b9e84;
 }
 
 .im .title-block {
@@ -367,7 +357,7 @@ body::before {
     padding: 10px 0;
     width: 300px;
     min-width: 600px;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .services .button a {
@@ -576,14 +566,16 @@ body::before {
     display: block;
 }
 
-.services_logo:before {
+.services_logo:before,
+.price_logo:before,
+.about_logo:before,
+.contacts_logo:before {
     content: "";
     z-index: -1;
     display: block;
     width: 110%;
     margin: 0 -5%;
     height: 290px;
-    background: url('../img/mercedes-gle.jpg') 50% 50% no-repeat;
     background-size: cover;
     -webkit-filter: blur(9px);
     -moz-filter: blur(9px);
@@ -593,33 +585,132 @@ body::before {
     position: absolute;
 }
 
-.services_logo {
-    width: 100%;
-    height: 270px;
-    position: relative;
-    min-width: 270px;
-    z-index: 0;
-    min-width: 600px;
+.services_logo:before {
+    background: url('../img/logos/mercedes-gle.jpg') 50% 50% no-repeat;
 }
 
-.services_logo .title-block {
+.price_logo:before {
+    background: url('../img/logos/bmw-750li.jpg') 50% 50% no-repeat;
+}
+
+.about_logo:before {
+    background: url('../img/logos/bugatti-chiron.jpg') 50% 50% no-repeat;
+}
+
+.contacts_logo:before {
+    background: url('../img/logos/mercedes-benz-amg-gt.jpg') 50% 50% no-repeat;
+}
+
+.services_logo,
+.price_logo,
+.about_logo,
+.contacts_logo {
+    width: 100%;
+    min-height: 270px;
+    position: relative;
+    z-index: 0;
+}
+
+.services_logo .title-block,
+.price_logo .title-block,
+.about_logo .title-block,
+.contacts_logo .title-block {
     font-size: 50px;
     text-align: center;
     color: white;
     padding: 50px 0 20px 0;
 }
 
-.services_logo .description-block {
-    font-size: 20px;
+.about_logo .title-block {
+    padding-top: 30px;
+}
+
+.services_logo .description-block,
+.price_logo .description-block,
+.about_logo .description-block,
+.contacts_logo .description-block {
+    font-size: 18px;
     text-align: center;
     color: white;
     padding: 0 70px;
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
 .services_block {
     width: 100%;
     height: auto;
     overflow: hidden;
+}
+
+.about-block {
+    background-color: white;
+    padding: 0 20px;
+}
+
+.about-block .description-block {
+    min-width: 600px;
+    max-width: 1100px;
+    margin: 0 auto;
+    font-size: 19px;
+    text-align: justify;
+    padding: 80px 0 0 0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.about-block .description-block p {
+    text-indent: 40px;
+    margin: 0;
+}
+
+.about-block .image-block {
+    max-width: 1100px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+
+.about-block .image-block img{
+    max-width: 100%;
+    height: auto;
+}
+
+.about-block .button-block {
+    font-size: 34px;
+    margin: 0 auto;
+    min-width: 150px;
+    text-align: center;
+    padding: 50px 0 60px 0;
+}
+
+.about-block .button-block a {
+    color: black;
+}
+
+.price_table {
+    background-color: #e4e5e6;
+    padding: 100px 20px;
+}
+
+.price_table .panel {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.price_table .panel th,
+.price_table .panel td {
+    padding: 20px;
+}
+
+.price_table .panel th {
+    font-size: 25px;
+}
+
+.price_table .panel td {
+    min-width: 130px;
+    font-size: 20px;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 @media screen and (max-device-width: 870px) {
@@ -832,18 +923,54 @@ body::before {
         height: 23px;
         margin-right: 16px;
    }
-   .services_logo {
+   .services_logo,
+   .price_logo,
+   .about_logo,
+   .contacts_logo {
        height: 570px;
    }
-   .services_logo .title-block {
+   .services_logo .title-block,
+   .price_logo .title-block,
+   .about_logo .title-block,
+   .contacts_logo .title-block {
        font-size: 100px;
    }
-   .services_logo .description-block {
+   .services_logo .description-block,
+   .price_logo .description-block,
+   .about_logo .description-block,
+   .contacts_logo .description-block {
        font-size: 40px;
    }
-   .services_logo:before {
+   .services_logo:before,
+   .price_logo:before,
+   .about_logo:before,
+   .contacts_logo:before {
        height: 590px;
        top: -10px;
+   }
+   .about-block {
+       padding: 0 30px;
+   }
+
+   .about_logo .description-block {
+       font-size: 33px;
+       padding: 0 20px;
+   }
+
+   .about_logo .title-block {
+       font-size: 80px;
+   }
+
+   .price_table {
+       padding: 100px 30px;
+   }
+
+   .price_table .panel th {
+        font-size: 45px;
+   }
+
+   .price_table .panel td {
+        font-size: 35px;
    }
  }
 

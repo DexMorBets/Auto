@@ -13,3 +13,16 @@ class Service(models.Model):
 
     def __str__(self):
         return self.title
+
+
+class Price(models.Model):
+    class Meta:
+        verbose_name = 'Цена'
+        verbose_name_plural = 'Цены'
+
+    title = models.CharField(verbose_name='Название', max_length=150)
+    description = models.TextField(max_length=500, verbose_name='Описание')
+    price = models.IntegerField(verbose_name='Цена')
+
+    def __str__(self):
+        return self.title
