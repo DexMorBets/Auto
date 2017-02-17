@@ -972,6 +972,14 @@ body {
    .price_table .panel td {
         font-size: 35px;
    }
+
+   .about-block .button-block {
+       font-size: 65px;
+   }
+
+   .about-block .description-block p {
+       font-size: 45px;
+   }
  }
 
 /*@media (max-width: 768px) {*/
