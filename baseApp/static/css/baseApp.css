@@ -962,7 +962,7 @@ body {
     margin-bottom: 50px;
 }
 
-@media screen and (max-device-width: 870px) {
+@media only screen and (max-device-width: 870px) {
     .menu-toolbar a {
         font-size: 18px;
     }
@@ -974,7 +974,7 @@ body {
     }
 }
 
-@media screen and (max-device-width: 768px) {
+@media only screen and (max-device-width: 767px) {
     img {
         max-width: 100%
     }
@@ -1302,7 +1302,7 @@ body {
    }
 
    .navigate-block .ul-block {
-       width: 565px;
+       width: 585px;
    }
 
    .navigate-block .ul-block ul a {
