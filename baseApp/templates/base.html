@@ -95,11 +95,11 @@
                 <div class="block">
                     <div class="nav-title-block">НАВИГАЦИЯ</div>
                     <div class="description-block navigate-bar">
-                        <p><a>Главная</a></p>
-                        <p><a>Услуги</a></p>
-                        <p><a>Цены</a></p>
-                        <p><a>О компании</a></p>
-                        <p><a>Контакты</a></p>
+                        <p><a href="/">Главная</a></p>
+                        <p><a href="{% url 'services_page' %}">Услуги</a></p>
+                        <p><a href="{% url 'price_page' %}">Цены</a></p>
+                        <p><a href="{% url 'about_page' %}">О компании</a></p>
+                        <p><a href="{% url 'contacts_page' %}">Контакты</a></p>
                     </div>
                 </div>
                 <div class="block">
@@ -107,7 +107,9 @@
                     <div class="ul-block">
                         <ul>
                             <li class="phone"><a href="tel:80297935987">8029 793-59-87</a></li>
+                            <li class="schedule">Пн-Вс, 9-21</li>
                             <li class="address">Минск, Гурского 1А</li>
+                            <li class="GPS">53.890204 27.483556</li>
                             <li class="skype"><a href="skype: betman193?call">betman193</a></li>
                             <li class="email"><a href="mailto: dexmor93@gmail.com">dexmor93@gmail.com</a></li>
                         </ul>

@@ -459,7 +459,12 @@ body {
     margin-bottom: 10px;
 }
 
-.footer .ul-block ul .phone::before {
+.footer .ul-block ul .phone::before,
+.footer .ul-block ul .address::before,
+.footer .ul-block ul .skype::before,
+.footer .ul-block ul .email::before,
+.footer .ul-block ul .GPS::before,
+.footer .ul-block ul .schedule::before {
     margin-right: 13px;
     background-image: url('../img/footer/Phone.png');
     background-size: 14px 14px;
@@ -469,6 +474,30 @@ body {
     content:"";
 }
 
+.footer .ul-block ul .address::before {
+    background-image: url('../img/footer/Map.png');
+}
+
+.footer .ul-block ul .skype::before {
+    background-image: url('../img/footer/Skype.png');
+}
+
+.footer .ul-block ul .GPS::before {
+    background-image: url('../img/footer/Marker.png');
+}
+
+.footer .ul-block ul .schedule::before {
+    background-image: url('../img/footer/Calendar.png');
+}
+
+.footer .ul-block ul .email::before {
+    margin-right: 10px;
+    background-image: url('../img/footer/Mail.png');
+    background-size: 16px 13px;
+    width: 16px;
+    height: 13px;
+}
+
 .footer .ul-block ul a {
     color: white;
     font-size: 16px;
@@ -476,36 +505,6 @@ body {
 
 .footer .ul-block ul li {
     font-size: 17px;
-}
-
-.footer .ul-block ul .address::before {
-    margin-right: 13px;
-    background-image: url('../img/footer/Marker.png');
-    background-size: 14px 14px;
-    display: inline-block;
-    width: 14px;
-    height: 14px;
-    content:"";
-}
-
-.footer .ul-block ul .skype::before {
-    margin-right: 13px;
-    background-image: url('../img/footer/Skype.png');
-    background-size: 14px 14px;
-    display: inline-block;
-    width: 14px;
-    height: 14px;
-    content:"";
-}
-
-.footer .ul-block ul .email::before {
-    margin-right: 10px;
-    background-image: url('../img/footer/Mail.png');
-    background-size: 16px 13px;
-    display: inline-block;
-    width: 16px;
-    height: 13px;
-    content:"";
 }
 
 .footer .social-bar {
@@ -811,7 +810,12 @@ body {
     margin-bottom: 10px;
 }
 
-.navigate-block .ul-block ul .phone::before {
+.navigate-block .ul-block ul .phone::before,
+.navigate-block .ul-block ul .address::before,
+.navigate-block .ul-block ul .skype::before,
+.navigate-block .ul-block ul .email::before,
+.navigate-block .ul-block ul .GPS::before,
+.navigate-block .ul-block ul .schedule::before {
     margin-right: 13px;
     background-image: url('../img/footer/Phone1.png');
     background-size: 17px 17px;
@@ -819,6 +823,30 @@ body {
     width: 17px;
     height: 17px;
     content:"";
+}
+
+.navigate-block .ul-block ul .address::before {
+    background-image: url('../img/footer/Map1.png');
+}
+
+.navigate-block .ul-block ul .skype::before {
+    background-image: url('../img/footer/Skype1.png');
+}
+
+.navigate-block .ul-block ul .GPS::before {
+    background-image: url('../img/footer/Marker1.png');
+}
+
+.navigate-block .ul-block ul .schedule::before {
+    background-image: url('../img/footer/Calendar1.png');
+}
+
+.navigate-block .ul-block ul .email::before {
+    margin-right: 10px;
+    background-image: url('../img/footer/Mail1.png');
+    background-size: 18px 15px;
+    width: 18px;
+    height: 15px;
 }
 
 .navigate-block .ul-block ul a {
@@ -829,41 +857,6 @@ body {
 .navigate-block .ul-block ul li {
     font-size: 20px;
     max-width: 220px;
-}
-
-.navigate-block .ul-block ul .address::before {
-    margin-right: 13px;
-    background-image: url('../img/footer/Marker1.png');
-    background-size: 17px 17px;
-    display: inline-block;
-    width: 17px;
-    height: 17px;
-    content:"";
-}
-
-.navigate-block .ul-block ul .skype::before {
-    margin-right: 13px;
-    background-image: url('../img/footer/Skype1.png');
-    background-size: 17px 17px;
-    display: inline-block;
-    width: 17px;
-    height: 17px;
-    content:"";
-}
-
-.navigate-block .ul-block ul .email::before {
-    margin-right: 10px;
-    background-image: url('../img/footer/Mail1.png');
-    background-size: 18px 15px;
-    display: inline-block;
-    width: 18px;
-    height: 15px;
-    content:"";
-}
-
-.navigate-block .ul-block ul .GPS {
-    margin-left: 30px;
-    font-size: 16px;
 }
 
 .contacts-title {
@@ -962,9 +955,28 @@ body {
     margin-bottom: 50px;
 }
 
-@media only screen and (max-device-width: 870px) {
+@media screen and (max-device-width: 870px) {
     .menu-toolbar a {
         font-size: 18px;
+    }
+    .im {
+       background-attachment: inherit;
+    }
+
+    .contacts .contacts-block .photo-block {
+        float: none;
+        margin: 0 auto;
+    }
+
+    .contacts .contacts-block .description-block {
+        float: none;
+        width: auto;
+        max-width: 350px;
+        margin: 0 auto;
+    }
+
+    .about_logo .description-block {
+        font-size: 14px;
     }
 }
 
@@ -974,7 +986,7 @@ body {
     }
 }
 
-@media only screen and (max-device-width: 767px) {
+@media screen and (max-device-width: 767px) {
     img {
         max-width: 100%
     }
@@ -1067,7 +1079,8 @@ body {
    .menu .menu-container .menu-button span {
        font-size: 80px;
     }
-   .menu-toolbar a, .menu-toolbar-hidden a {
+   .menu-toolbar a,
+   .menu-toolbar-hidden a {
        font-size: 45px;
        padding: 0;
    }
@@ -1126,7 +1139,8 @@ body {
    .footer-main .block {
        padding: 50px 30px;
    }
-   .footer-main .block .nav-title-block, .footer-main .block .address-title-block {
+   .footer-main .block .nav-title-block,
+   .footer-main .block .address-title-block {
        font-size: 45px;
        margin: 0 0 30px 20%;
     }
@@ -1149,24 +1163,17 @@ body {
    .footer .ul-block ul li{
        font-size: 30px;
    }
-   .footer .ul-block ul .phone::before {
+   .footer .ul-block ul .phone::before,
+   .footer .ul-block ul .address::before,
+   .footer .ul-block ul .skype::before,
+   .footer .ul-block ul .GPS::before,
+   .footer .ul-block ul .schedule::before {
         background-size: 24px 24px;
         width: 24px;
         height: 24px;
         margin-right: 20px;
    }
-   .footer .ul-block ul .address::before {
-        background-size: 24px 24px;
-        width: 24px;
-        height: 24px;
-        margin-right: 20px;
-   }
-   .footer .ul-block ul .skype::before {
-        background-size: 24px 24px;
-        width: 24px;
-        height: 24px;
-        margin-right: 20px;
-   }
+
    .footer .ul-block ul .email::before {
         background-size: 26px 23px;
         width: 26px;
@@ -1257,6 +1264,8 @@ body {
    .contacts .contacts-block .photo-block {
        height: auto;
        width: 300px;
+       float: left;
+       margin-right: 80px;
    }
 
    .contacts .contacts-block .photo-block img {
@@ -1264,21 +1273,26 @@ body {
    }
 
    .contacts .contacts-block .description-block {
-       width: auto;
        height: 300px;
+       width: 750px;
+       height: 300px;
+       float: left;
    }
 
    .contacts .contacts-block .description-block .fio-block {
        font-size: 40px;
+       width: 600px;
    }
 
    .contacts .contacts-block .description-block .position-block {
        font-size: 35px;
+       width: 600px;
    }
 
    .contacts .contacts-block .description-block .phone-block {
        font-size: 40px;
        margin-left: 50px;
+       width: 600px;
    }
 
    .contacts .contacts-block .description-block .phone-block img {
@@ -1309,19 +1323,11 @@ body {
        font-size: 55px;
    }
 
-    .navigate-block .ul-block ul .GPS {
-       font-size: 30px;
-       margin-left: 75px;
-    }
-
-    .navigate-block .ul-block ul .phone::before {
-        background-size: 43px 43px;
-        width: 43px;
-        height: 43px;
-        margin-right: 30px;
-    }
-
-    .navigate-block .ul-block ul .skype::before {
+    .navigate-block .ul-block ul .phone::before,
+    .navigate-block .ul-block ul .skype::before,
+    .navigate-block .ul-block ul .address::before,
+    .navigate-block .ul-block ul .GPS::before,
+    .navigate-block .ul-block ul .schedule::before {
         background-size: 43px 43px;
         width: 43px;
         height: 43px;
@@ -1333,13 +1339,6 @@ body {
         width: 53px;
         height: 43px;
         margin-right: 20px;
-    }
-
-    .navigate-block .ul-block ul .address::before {
-        background-size: 43px 43px;
-        width: 43px;
-        height: 43px;
-        margin-right: 30px;
     }
 
     .navigate-block .social-title {
