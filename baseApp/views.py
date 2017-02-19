@@ -8,7 +8,7 @@ from django.http.response import HttpResponseRedirect
 from django.shortcuts import render, get_object_or_404, redirect
 from django.utils import timezone
 from django.contrib.auth.decorators import user_passes_test
-from .models import Service, Price
+from .models import Service, Price, Contact
 from django.core.paginator import Paginator
 from django.template.context_processors import csrf
 from django.http import HttpResponse
@@ -44,4 +44,6 @@ def about_page(request):
 
 def contacts_page(request):
     args = {}
+    contacts = Contact.objects.all()
+    args['contacts'] = contacts
     return render(request, 'contact_page.html', args)

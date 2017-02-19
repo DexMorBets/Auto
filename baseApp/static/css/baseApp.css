@@ -575,13 +575,14 @@ body {
     display: block;
     width: 110%;
     margin: 0 -5%;
-    height: 290px;
+    height: 325px;
+    top: -10px;
     background-size: cover;
-    -webkit-filter: blur(9px);
-    -moz-filter: blur(9px);
-    -o-filter: blur(9px);
-    -ms-filter: blur(9px);
-    filter: blur(9px);
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
     position: absolute;
 }
 
@@ -641,6 +642,7 @@ body {
     width: 100%;
     height: auto;
     overflow: hidden;
+    min-width: 600px;
 }
 
 .about-block {
@@ -665,6 +667,7 @@ body {
 
 .about-block .image-block {
     max-width: 1100px;
+    min-width: 600px;
     width: 100%;
     height: auto;
     margin: 0 auto;
@@ -679,7 +682,7 @@ body {
 .about-block .button-block {
     font-size: 34px;
     margin: 0 auto;
-    min-width: 150px;
+    min-width: 600px;
     text-align: center;
     padding: 50px 0 60px 0;
 }
@@ -691,6 +694,7 @@ body {
 .price_table {
     background-color: #e4e5e6;
     padding: 100px 20px;
+    min-width: 600px;
 }
 
 .price_table .panel {
@@ -711,6 +715,251 @@ body {
     min-width: 130px;
     font-size: 20px;
     font-family: 'Roboto Condensed', sans-serif;
+}
+
+.contacts {
+    padding: 100px 20px;
+    width: 100%;
+    min-width: 600px;
+}
+
+.contacts .block {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.contacts .contacts-block {
+    width: 50%;
+    float: left;
+}
+
+.contacts .contacts-block .user {
+    padding-bottom: 30px;
+}
+
+.contacts .contacts-block .photo-block {
+    width: 150px;
+    height: 150px;
+    float: left;
+    margin-right: 30px;
+}
+
+.contacts .contacts-block .photo-block img {
+    width: 100%;
+    height: auto;
+    border-radius: 100px;
+}
+
+.contacts .contacts-block .description-block {
+    float: left;
+    height: 150px;
+    width: 350px;
+}
+
+.contacts .contacts-block .description-block div {
+    height: 33.3336666%;
+    width: 100%;
+}
+
+.contacts .contacts-block .description-block .fio-block {
+    font-size: 25px;
+    padding-top: 15px;
+}
+
+.contacts .contacts-block .description-block .position-block {
+    font-size: 18px;
+    padding: 13px 0;
+    color: #8a8a8a;
+}
+
+.contacts .contacts-block .description-block .phone-block {
+    font-size: 18px;
+    padding-top: 5px;
+    margin-left: 25px;
+    position: relative;
+}
+
+.contacts .contacts-block .description-block .phone-block a {
+    color: black;
+}
+
+.contacts .contacts-block .description-block .phone-block img {
+    position: absolute;
+    left: -26px;
+    top: 10px;
+    width: 16px;
+    height: 16px;
+}
+
+.navigate-block {
+    width: 50%;
+    float: right;
+    border-left: 1px solid #e2e2e2;
+}
+
+.navigate-block .ul-block {
+    width: 210px;
+    margin: 40px auto 0 auto;
+}
+
+.navigate-block .ul-block ul {
+    padding: 0;
+}
+
+.navigate-block .ul-block ul li {
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+
+.navigate-block .ul-block ul .phone::before {
+    margin-right: 13px;
+    background-image: url('../img/footer/Phone1.png');
+    background-size: 17px 17px;
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    content:"";
+}
+
+.navigate-block .ul-block ul a {
+    color: black;
+    font-size: 20px;
+}
+
+.navigate-block .ul-block ul li {
+    font-size: 20px;
+    max-width: 220px;
+}
+
+.navigate-block .ul-block ul .address::before {
+    margin-right: 13px;
+    background-image: url('../img/footer/Marker1.png');
+    background-size: 17px 17px;
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    content:"";
+}
+
+.navigate-block .ul-block ul .skype::before {
+    margin-right: 13px;
+    background-image: url('../img/footer/Skype1.png');
+    background-size: 17px 17px;
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    content:"";
+}
+
+.navigate-block .ul-block ul .email::before {
+    margin-right: 10px;
+    background-image: url('../img/footer/Mail1.png');
+    background-size: 18px 15px;
+    display: inline-block;
+    width: 18px;
+    height: 15px;
+    content:"";
+}
+
+.navigate-block .ul-block ul .GPS {
+    margin-left: 30px;
+    font-size: 16px;
+}
+
+.contacts-title {
+    width: 200px;
+    font-size: 30px;
+    text-align: center;
+    margin: 0 auto 30px auto;
+}
+
+.contacts .social-bar {
+    display: block;
+    margin: 30px auto 0 auto;
+    width: 313px;
+}
+
+.contacts .social-bar div {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 30px;
+    transition: all 0.3s ease-in-out;
+    background-color: #4a4a4a;
+    margin-right: 10px;
+}
+
+.contacts .social-bar img {
+    margin-top: 12px;
+    width: 25px;
+    height: 25px;
+}
+
+.contacts .social-bar .vk img {
+    margin-top: 13px;
+    margin-right: 1px;
+}
+
+.contacts .social-bar .inst img,
+.contacts .social-bar .twitter img {
+    margin-left: 1px;
+}
+
+.contacts .social-bar div a {
+    font-size: 25px;
+    color: white;
+}
+
+.contacts .social-bar .vk:hover,
+.contacts .social-bar .vk:active {
+    background-color: #507299;
+}
+
+.contacts .social-bar .facebook:hover,
+.contacts .social-bar .facebook:active {
+    background-color: #3b5998;
+}
+
+.contacts .social-bar .od:hover,
+.contacts .social-bar .od:active {
+    background-color: #ee8208;
+}
+
+.contacts .social-bar .twitter:hover,
+.contacts .social-bar .twitter:active {
+    background-color: #00aced;
+}
+
+.contacts .social-bar .inst:hover,
+.contacts .social-bar .inst:active {
+    background-image: url("../img/social/inst-back.jpg");
+    background-size: cover;
+}
+
+.navigate-block .map {
+    height: auto;
+    width: auto;
+    margin-top: 50px;
+}
+
+.navigate-block .map img {
+    display: block;
+    width: 350px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 500px;
+}
+
+.navigate-block .social-title {
+    font-size: 30px;
+    text-align: center;
+    width: 350px;
+    margin: 0 auto;
+}
+
+.navigate-block .ul-container {
+    margin-bottom: 50px;
 }
 
 @media screen and (max-device-width: 870px) {
@@ -980,6 +1229,153 @@ body {
    .about-block .description-block p {
        font-size: 45px;
    }
+
+   .contacts .contacts-block,
+   .navigate-block {
+       float: none;
+       width: 100%;
+       border: none;
+       margin-bottom: 80px;
+   }
+
+   .contacts .contacts-block .user {
+       padding: 0 50px 30px 50px;
+   }
+
+   .contacts-title {
+        width: 500px;
+        font-size: 80px;
+        text-align: center;
+        margin: 0 auto 120px auto;
+   }
+
+   .contacts {
+       padding: 100px 30px;
+   }
+
+   .contacts .contacts-block .photo-block {
+       height: auto;
+       width: 300px;
+   }
+
+   .contacts .contacts-block .photo-block img {
+       border-radius: 500px;
+   }
+
+   .contacts .contacts-block .description-block {
+       width: auto;
+       height: 300px;
+   }
+
+   .contacts .contacts-block .description-block .fio-block {
+       font-size: 40px;
+   }
+
+   .contacts .contacts-block .description-block .position-block {
+       font-size: 35px;
+   }
+
+   .contacts .contacts-block .description-block .phone-block {
+       font-size: 40px;
+       margin-left: 50px;
+   }
+
+   .contacts .contacts-block .description-block .phone-block img {
+       top: 15px;
+       left: -48px;
+       width: 36px;
+       height: 36px;
+   }
+
+   .navigate-block .map {
+       margin-bottom: 120px;
+   }
+
+   .navigate-block .map img {
+       width: 100%;
+   }
+
+   .navigate-block .ul-block ul li {
+       font-size: 55px;
+       max-width: 600px;
+   }
+
+   .navigate-block .ul-block {
+       width: 565px;
+   }
+
+   .navigate-block .ul-block ul a {
+       font-size: 55px;
+   }
+
+    .navigate-block .ul-block ul .GPS {
+       font-size: 30px;
+       margin-left: 75px;
+    }
+
+    .navigate-block .ul-block ul .phone::before {
+        background-size: 43px 43px;
+        width: 43px;
+        height: 43px;
+        margin-right: 30px;
+    }
+
+    .navigate-block .ul-block ul .skype::before {
+        background-size: 43px 43px;
+        width: 43px;
+        height: 43px;
+        margin-right: 30px;
+    }
+
+    .navigate-block .ul-block ul .email::before {
+        background-size: 53px 43px;
+        width: 53px;
+        height: 43px;
+        margin-right: 20px;
+    }
+
+    .navigate-block .ul-block ul .address::before {
+        background-size: 43px 43px;
+        width: 43px;
+        height: 43px;
+        margin-right: 30px;
+    }
+
+    .navigate-block .social-title {
+        width: 900px;
+        font-size: 70px;
+        margin: 120px 0;
+    }
+
+    .contacts .social-bar {
+        margin: 30px auto 0 auto;
+        width: 100%;
+        padding: 0 53px;
+    }
+
+    .contacts .social-bar div {
+        width: 150px;
+        height: 150px;
+        border-radius: 100px;
+        margin-right: 10px;
+    }
+
+    .contacts .social-bar img {
+        margin-top: 45px;
+        width: 55px;
+        height: 55px;
+    }
+
+    .contacts .social-bar .vk img {
+        margin-top: 45px;
+        margin-right: 1px;
+    }
+
+    .contacts .social-bar .inst img,
+    .contacts .social-bar .twitter img {
+        margin-left: 1px;
+    }
+
  }
 
 /*@media (max-width: 768px) {*/

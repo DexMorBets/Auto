@@ -26,3 +26,19 @@ class Price(models.Model):
 
     def __str__(self):
         return self.title
+
+
+class Contact(models.Model):
+    class Meta:
+        verbose_name = 'Контакт'
+        verbose_name_plural = 'Контакты'
+
+    name = models.CharField(verbose_name='ФИО', max_length=150)
+    position = models.TextField(max_length=500, verbose_name='Должность', null=True, blank=True)
+    phone_number = models.IntegerField(verbose_name='Номер телефона')
+    phone_number2 = models.IntegerField(verbose_name='Номер телефона 2', null=True, blank=True)
+    phone_number3 = models.IntegerField(verbose_name='Номер телефона 3', null=True, blank=True)
+    photo = models.ImageField(upload_to='contacts/', blank=True)
+
+    def __str__(self):
+        return self.name

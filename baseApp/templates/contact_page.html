@@ -12,5 +12,63 @@
             </div>
         </div>
     </div>
+    <div class="contacts">
+        <div class="block clearfix">
+            <div class="contacts-block clearfix">
+                <div class="contacts-title">КОНТАКТЫ</div>
+                {% if contacts|length %}
+                {% for contact in contacts %}
+                <div class="user clearfix">
+                    <div class="photo-block">
+                        <img src="{% static 'img/' %}{% if contact.photo %}{{ contact.photo }}{% else %}contacts/User.png{% endif %}">
+                    </div>
+                    <div class="description-block">
+                        <div class="fio-block">{{ contact.name }}</div>
+                        <div class="position-block">{{ contact.position }}</div>
+                        <div class="phone-block"><img src="{% static 'img/bar/Phone.png'%}" alt="Phone">
+                            <a href="tel:+{{ contact.phone_number }}">+{{ contact.phone_number }}</a>
+                            {% if contact.phone_number2 %}<a href="tel:+{{ contact.phone_number2 }}">, +{{ contact.phone_number2 }}</a>{% endif %}
+                            {% if contact.phone_number3 %}<a href="tel:+{{ contact.phone_number3 }}">, +{{ contact.phone_number3 }}</a>{% endif %}
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+                {% endif %}
+            </div>
+            <div class="navigate-block clearfix">
+                <div class="contacts-title">НАШ АДРЕС</div>
+                <div class="map"><img src="{% static 'img/map.jpg' %}"></div>
+                <div class="ul-container">
+                    <div class="ul-block">
+                        <ul>
+                            <li class="phone"><a href="tel:80297935987">8029 793-59-87</a></li>
+                            <li class="address">Минск, Гурского 1А,</li>
+                            <li class="GPS">GPS 53.890204 27.483556</li>
+                            <li class="skype"><a href="skype: betman193?call">betman193</a></li>
+                            <li class="email"><a href="mailto: dexmor93@gmail.com">dexmor93@gmail.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="social-title">МЫ В СОЦИАЛЬНЫХ СЕТЯХ</div>
+                <div class="social-bar">
+                        <div class="vk">
+                            <a href=""><img src="{% static 'img/social/vk.png'%}" alt="Vkontakte"></a>
+                        </div>
+                        <div class="facebook">
+                            <a href=""><img src="{% static 'img/social/facebook.png'%}" alt="Facebook"></a>
+                        </div>
+                        <div class="od">
+                            <a href=""><img src="{% static 'img/social/od.png'%}" alt="Odnoklassniki"></a>
+                        </div>
+                        <div class="twitter">
+                            <a href=""><img src="{% static 'img/social/twitter.png'%}" alt="Twitter"></a>
+                        </div>
+                        <div class="inst">
+                            <a href=""><img src="{% static 'img/social/inst.png'%}" alt="Instagram"></a>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 {% endblock %}
