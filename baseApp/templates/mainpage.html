@@ -55,12 +55,14 @@
                 <div class="block">
                     <div class="image-block"><img src="{% static 'img/'%}{{service.image}}"></div>
                     <div class="title-block">{{service.title}}</div>
-                    <div class="description-block">{{service.description}}</div>
+                    <div class="description-block"><p>{{service.description}}</p></div>
                 </div>
                 {% endfor %}
             </div>
         </div>
-        <div class="button"><a href="{% url 'services_page' %}">ПОКАЗАТЬ ВСЕ</a></div>
+        <div>
+            <a class="button" href="{% url 'services_page' %}">ПОКАЗАТЬ ВСЕ</a>
+        </div>
     </div>
 </div>
 {% endblock %}

@@ -351,18 +351,32 @@ body {
     font-family: 'Roboto Condensed', sans-serif;
 }
 
-.services .button {
-    margin: 45px auto 10px auto;
-    text-align: center;
-    padding: 10px 0;
-    width: 300px;
-    min-width: 600px;
-    font-size: 25px;
+.container-services .block .description-block {
+    text-indent: 30px;
 }
 
-.services .button a {
-    color: black;
+.services .button {
+    margin: 45px auto 10px auto;
+}
+
+.button {
+    display: block;
+    font-size: 25px;
+    width: 200px;
+    padding: 12px 0;
+    color: white;
+    background-color: #4a4a4a;
     cursor: pointer;
+    text-align: center;
+    border-radius: 3px;
+    margin: 45px auto 10px auto;
+}
+
+.button:hover,
+.button:active {
+    background-color: rgba(74, 74, 74, 0.85);
+    text-decoration: none;
+    color: white;
 }
 
 .footer {
@@ -432,6 +446,10 @@ body {
     font-size: 15px;
     color: #aaa;
     font-family: 'Roboto Condensed', sans-serif;
+}
+
+.footer-main .block .description-block {
+    text-indent: 30px;
 }
 
 .corp a,
@@ -660,7 +678,7 @@ body {
 }
 
 .about-block .description-block p {
-    text-indent: 40px;
+    text-indent: 30px;
     margin: 0;
 }
 
@@ -679,15 +697,10 @@ body {
 }
 
 .about-block .button-block {
-    font-size: 34px;
     margin: 0 auto;
     min-width: 600px;
     text-align: center;
-    padding: 50px 0 60px 0;
-}
-
-.about-block .button-block a {
-    color: black;
+    padding: 10px 0 60px 0;
 }
 
 .price_table {
@@ -1111,10 +1124,7 @@ body {
        font-size: 45px;
        padding: 0 40px 70px 40px;
    }
-   .services .button {
-       font-size: 50px;
-       margin: 60px auto 20px auto;
-   }
+
    .skils-block .title-block {
        font-size: 70px;
        padding: 60px 30px;
@@ -1281,18 +1291,18 @@ body {
 
    .contacts .contacts-block .description-block .fio-block {
        font-size: 40px;
-       width: 600px;
+       width: 450px;
    }
 
    .contacts .contacts-block .description-block .position-block {
        font-size: 35px;
-       width: 600px;
+       width: 450px;
    }
 
    .contacts .contacts-block .description-block .phone-block {
        font-size: 40px;
        margin-left: 50px;
-       width: 600px;
+       width: 450px;
    }
 
    .contacts .contacts-block .description-block .phone-block img {
@@ -1376,6 +1386,11 @@ body {
         margin-left: 1px;
     }
 
+    .button {
+        width: auto;
+        padding: 20px 0;
+        font-size: 55px;
+    }
  }
 
 /*@media (max-width: 768px) {*/
