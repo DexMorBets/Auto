@@ -16,7 +16,7 @@ body {
 
 .bar {
     max-width: 1100px;
-    min-width: 600px;
+    min-width: 770px;
     margin: 0 auto;
     height: auto;
 }
@@ -94,7 +94,7 @@ body {
 
 .menu-container {
     max-width: 1100px;
-    min-width: 600px;
+    min-width: 770px;
     height: auto;
     margin: 0 auto;
 }
@@ -151,7 +151,7 @@ body {
     display: none;
     height: auto;
     width: 100%;
-    min-width: 600px;
+    min-width: 770px;
     float: none;
     background: white;
     margin: 0;
@@ -164,13 +164,6 @@ body {
     text-decoration: none;
     padding-bottom: 25px;
     transition: all 0.05s ease-in-out;
-}
-
-.menu-toolbar a:hover,
-.menu-toolbar a:active,
-.menu-toolbar-hidden a:hover,
-.menu-toolbar-hidden a:active{
-    border-bottom: 5px solid rgba(26, 188, 156, 0.81);
 }
 
 .menu-toolbar div,
@@ -189,7 +182,7 @@ body {
 }
 
 .slider {
-    height: 600px;
+    height: 770px;
     width: 100%;
 }
 
@@ -200,7 +193,7 @@ body {
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
-    min-width: 600px;
+    min-width: 770px;
 }
 
 .skils {
@@ -211,7 +204,7 @@ body {
 
 .container-skils {
     max-width: 1100px;
-    min-width: 600px;
+    min-width: 770px;
     height: auto;
     margin: 0 auto;
 }
@@ -270,7 +263,7 @@ body {
     background-size: cover;
     height: auto;
     width: 100%;
-    min-width: 600px;
+    min-width: 770px;
     text-align: center;
     color: white;
     padding: 150px 20px;
@@ -296,7 +289,7 @@ body {
 
 .services .container-services {
     max-width: 1100px;
-    min-width: 600px;
+    min-width: 770px;
     height: auto;
     margin: 0 auto;
     clear: both;
@@ -370,6 +363,7 @@ body {
     text-align: center;
     border-radius: 3px;
     margin: 45px auto 10px auto;
+    transition: all 0.3s ease-in-out;
 }
 
 .button:hover,
@@ -407,7 +401,7 @@ body {
 
 .corp .block, .footer-main {
     max-width: 1100px;
-    min-width: 600px;
+    min-width: 770px;
     height: auto;
     margin: 0 auto;
 }
@@ -659,7 +653,7 @@ body {
     width: 100%;
     height: auto;
     overflow: hidden;
-    min-width: 600px;
+    min-width: 770px;
 }
 
 .about-block {
@@ -668,7 +662,7 @@ body {
 }
 
 .about-block .description-block {
-    min-width: 600px;
+    min-width: 770px;
     max-width: 1100px;
     margin: 0 auto;
     font-size: 19px;
@@ -684,7 +678,7 @@ body {
 
 .about-block .image-block {
     max-width: 1100px;
-    min-width: 600px;
+    min-width: 770px;
     width: 100%;
     height: auto;
     margin: 0 auto;
@@ -698,7 +692,7 @@ body {
 
 .about-block .button-block {
     margin: 0 auto;
-    min-width: 600px;
+    min-width: 770px;
     text-align: center;
     padding: 10px 0 60px 0;
 }
@@ -706,7 +700,7 @@ body {
 .price_table {
     background-color: #e4e5e6;
     padding: 100px 20px;
-    min-width: 600px;
+    min-width: 770px;
 }
 
 .price_table .panel {
@@ -732,7 +726,7 @@ body {
 .contacts {
     padding: 100px 20px;
     width: 100%;
-    min-width: 600px;
+    min-width: 770px;
 }
 
 .contacts .block {
@@ -968,6 +962,10 @@ body {
     margin-bottom: 50px;
 }
 
+.flow {
+    border-bottom: 5px solid rgba(26, 188, 156, 0.81);
+}
+
 @media screen and (max-device-width: 870px) {
     .menu-toolbar a {
         font-size: 18px;
@@ -1042,7 +1040,7 @@ body {
        margin: 0 0 50px 0;
    }
    .corp {
-       padding: 25px 30px;
+       padding: 40px 30px;
        font-size: 35px;
    }
    .footer-main .block {
@@ -1132,12 +1130,16 @@ body {
    .im {
        padding: 150px 30px;
        background-attachment: inherit;
+       border-top: 15px solid #1b9e84;
    }
    .im .title-block {
        font-size: 50px;
    }
    .im .description-block {
        font-size: 35px;
+   }
+   .footer {
+       border-top: 15px solid rgba(26, 188, 156, 0.81);
    }
    .footer-main .block .about-title-block {
        font-size: 45px;
@@ -1322,7 +1324,7 @@ body {
 
    .navigate-block .ul-block ul li {
        font-size: 55px;
-       max-width: 600px;
+       max-width: 770px;
    }
 
    .navigate-block .ul-block {
@@ -1390,6 +1392,14 @@ body {
         width: auto;
         padding: 27px 0;
         font-size: 55px;
+    }
+
+    .services .button {
+        margin: 45px auto 40px auto;
+    }
+
+    .container-services .block:nth-child(3n+3) {
+        float: none;
     }
  }
 
