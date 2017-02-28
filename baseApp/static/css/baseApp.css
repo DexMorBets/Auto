@@ -181,8 +181,8 @@ body {
     padding: 25px 0;
 }
 
-.slider {
-    height: 770px;
+.main-block .slider {
+    height: 600px;
     width: 100%;
 }
 
