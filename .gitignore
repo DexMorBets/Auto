@@ -4,4 +4,5 @@ Autovenv
 db.sqlite3
 .DS_Store
 .idea
+settings.py
 migrations
